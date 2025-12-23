@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>APP de agendamento</title>
+</head> 
+<body>
+    <header>
+        <img src="imagens/Copilot_20251223_200125.png" alt="logo do app Saúde APP">
+        <h1 class="h1header">Bem-vindo ao APP de Agendamento</h1>
+    </header>
+    <main>
+        <div class="divPrincipal">
+            <h1>Agendamento aqui.</h1>
+            <form>
+                <section>
+                    <label for="">Qual a sua sua consulta:</label>
+                    <input type="text" name="consulta" id="consulta" placeholder="Consulta...">
+                </section>
+                <section>
+                    <label for="">Data da consulta:</label>
+                    <input type="date" name="dataConsulta" id="dataConsulta" placeholder="dataConsulta"> 
+                </section>
+                <section>
+                    <label for="">Hora da consulta:</label>
+                    <input type="time" name="horaConsulta" id="horaConsulta" placeholder="horaConsulta">
+                </section>
+                <section>
+                    <label for="">Seu nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome...">
+                </section> 
+                <section>
+                    <label for="">Seu telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone...">
+                </section>
+                <section>
+                    <label for="">Nome do médico:</label>
+                    <input type="text" name="medico" id="medico" placeholder="Nome do médico...">
+                </section>       
+            </form>
+            <button  id="agendar-btn">Agendar</button>
+            <div id="confirmation-message" class="divFilha"></div>
+        </div>
+        <div class="divPrincipal">
+            <h2>Agendamentos realizados:</h2>
+            <ul id="appointments-list"></ul>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

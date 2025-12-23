@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+img {
+    width: 10%;
+    height: 10%;
+}
+header {
+    border: #1a0677 solid 2px ;
+    background-color: #3c5aef;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(73, 13, 224, 0.876);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+    justify-content: center;
+}
+.h1header {
+    color: white;
+    font-size: 3.2rem;
+}
+h1, h2 {
+    color:white;
+    text-align: center;
+    margin-top: 20px;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.divPrincipal {
+    width: 40rem;
+    height: 39rem;
+    border-radius: 10px;
+    background-color: #3c5aef;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 8px rgba(73, 13, 224, 0.876);
+}
+.divFilha {
+    width: 39rem;
+    height: 6rem;
+    border: #3c5aef solid 2px;
+    border-radius: 10px;
+    background-color: #07079c;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+label {
+    color: white;
+    font-size: 1.2rem;
+}
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20rem;
+}
+section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+section label {
+    min-width: 10rem;
+    text-align: right;
+    margin-right: 0.5rem;
+}
+section input {
+    flex: 1;
+}
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #1a0677;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(73, 13, 224, 0.876);
+    transition: ease-in-out 0.3s;
+}
+button:hover {
+    color: #3c5aef;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(73, 13, 224, 0.876);
+}
