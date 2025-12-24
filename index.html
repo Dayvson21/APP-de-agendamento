@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>APP de agendamento</title>
-</head> 
+</head>
+
 <body>
     <header>
         <img src="imagens/Copilot_20251223_200125.png" alt="logo do app Saúde APP">
@@ -14,41 +16,54 @@
     <main>
         <div class="divPrincipal">
             <h1>Agendamento aqui.</h1>
-            <form>
+            <form id="agendamento-form">
                 <section>
                     <label for="">Qual a sua sua consulta:</label>
-                    <input type="text" name="consulta" id="consulta" placeholder="Consulta...">
+                    <input type="text" name="consulta" id="consulta" placeholder="Consulta..." required>
                 </section>
                 <section>
                     <label for="">Data da consulta:</label>
-                    <input type="date" name="dataConsulta" id="dataConsulta" placeholder="dataConsulta"> 
+                    <input type="date" name="dataConsulta" id="dataConsulta" placeholder="dataConsulta" required>
                 </section>
                 <section>
                     <label for="">Hora da consulta:</label>
-                    <input type="time" name="horaConsulta" id="horaConsulta" placeholder="horaConsulta">
+                    <input type="time" name="horaConsulta" id="horaConsulta" placeholder="horaConsulta" required>
                 </section>
                 <section>
                     <label for="">Seu nome:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Nome...">
-                </section> 
+                    <input type="text" name="nome" id="nome" placeholder="Nome..." required>
+                </section>
                 <section>
                     <label for="">Seu telefone:</label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone...">
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone..." required>
                 </section>
                 <section>
                     <label for="">Nome do médico:</label>
-                    <input type="text" name="medico" id="medico" placeholder="Nome do médico...">
-                </section>       
+                    <input type="text" name="medico" id="medico" placeholder="Nome do médico..." required>
+                </section>
+                <section>
+                    <label for="convenio">Selecione seu convênio:</label>
+                    <select id="convenio" name="convenio" required>
+                        <option value="Select">Select</option>
+                        <option value="Bradesco">Bradesco</option>
+                        <option value="SulAmérica">SulAmérica</option>
+                        <option value="Hapvida">Hapvida</option>
+                        <option value="Fox">Fox</option>
+                        <option value="Unimed">Unimed</option>
+                        <option value="Amil">Amil</option>
+                    </select>
+                </section>
             </form>
-            <button  id="agendar-btn">Agendar</button>
-            <div id="confirmation-message" class="divFilha"></div>
+            <button id="agendar-btn">Agendar</button>
+            <div id="confirmação-mensagem" class="divFilha"></div>
         </div>
         <div class="divPrincipal">
             <h2>Agendamentos realizados:</h2>
-            <ul id="appointments-list"></ul>
+            <ul id="agendamentos-lista"></ul>
         </div>
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
