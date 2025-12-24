@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #0a36a3 0%, #e3e6fa 60%, #1313bd 100%);
     margin: 0;
     padding: 0;
     display: flex;
@@ -15,7 +15,7 @@ img {
 }
 header {
     border: #1a0677 solid 2px ;
-    background-color: #3c5aef;
+    /* background-color: #3c5aef; */
     padding: 1rem 0;
     box-shadow: 0 2px 4px rgba(73, 13, 224, 0.876);
     display: flex;
@@ -39,30 +39,36 @@ main {
     flex-direction: row;
 }
 .divPrincipal {
-    width: 40rem;
-    height: 39rem;
-    border-radius: 10px;
-    background-color: #3c5aef;
-    margin: auto;
-    margin-top: 2rem;
+    width: 42rem;
+    min-height: 40rem;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #3c5aef 80%, #6e8bfa 100%);
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
-    box-shadow: 0 4px 8px rgba(73, 13, 224, 0.876);
+    gap: 1.2rem;
+    box-shadow: 0 8px 24px 0 rgba(73, 13, 224, 0.18), 0 1.5px 4px 0 rgba(73, 13, 224, 0.12);
+    transition: box-shadow 0.3s, background 0.3s;
+    padding: 2.5rem 2rem 2rem 2rem;
 }
 .divFilha {
-    width: 39rem;
-    height: 6rem;
-    border: #3c5aef solid 2px;
-    border-radius: 10px;
-    background-color: #07079c;
-    color: white;
+    width: 95%;
+    min-height: 4.5rem;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(90deg, #07079c 80%, #3c5aef 100%);
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
-    box-shadow: 0 4px 8px rgba(73, 13, 224, 0.876);
+    font-size: 1.25rem;
+    box-shadow: 0 2px 12px 0 rgba(73, 13, 224, 0.18);
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem 1.5rem;
+    transition: box-shadow 0.3s, background 0.3s;
+    word-break: break-word;
 }
 form {
     display: flex;
@@ -126,8 +132,8 @@ button:hover {
 ul {
     list-style-type: none;
     padding: 0;
-    width: 90%;
-    max-height: 20rem;
+    width: 90%;;
+    max-height: 24rem;
     overflow-y: auto;
     margin-bottom: 1rem;
 }

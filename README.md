@@ -1,31 +1,35 @@
 # APP de Agendamento
 
-Este é um aplicativo web simples para agendamento de consultas, desenvolvido com HTML, CSS e JavaScript.
+Este é um aplicativo web para agendamento de consultas, desenvolvido com HTML, CSS e JavaScript.
 
 ## Funcionalidades
-- Formulário para inserir dados de agendamento (consulta, data, hora, nome, telefone, médico)
-- Interface amigável e responsiva
-- Estilização moderna
+- Formulário para agendar consultas com validação dos campos
+- Visualização dos agendamentos realizados
+- Armazenamento dos agendamentos no navegador (localStorage)
+- Interface moderna e responsiva
 
 ## Estrutura do Projeto
-- `index.html`: Página principal com o formulário de agendamento
-- `style.css`: Estilos para layout e aparência
-- `script.js`: Lógica JavaScript para manipulação do formulário
+- `index.html`: Página principal com o formulário e lista de agendamentos
+- `style.css`: Estilos visuais, cores suaves e layout moderno
+- `script.js`: Lógica de validação, manipulação do DOM e armazenamento
+- `README.md`: Documentação do projeto
 
 ## Como usar
 1. Abra o arquivo `index.html` em seu navegador.
-2. Preencha o formulário com os dados necessários.
-3. (Opcional) Implemente funcionalidades extras no `script.js` conforme desejar.
+2. Preencha o formulário e clique em "Agendar".
+3. Veja os agendamentos listados abaixo do formulário.
 
 ## Personalização
-Você pode modificar este README, os arquivos de código e os estilos conforme suas necessidades futuras.
+- O design pode ser facilmente alterado usando o Figma e adaptando o CSS.
+- Para adicionar novas funcionalidades, edite o arquivo `script.js`.
+- O README pode ser atualizado conforme o projeto evolui.
 
 ## Melhorias Sugeridas
-- Validação de dados do formulário
-- Armazenamento dos agendamentos (localStorage, backend, etc.)
-- Listagem dos agendamentos realizados
-- Responsividade aprimorada para dispositivos móveis
+- Integração com backend para persistência dos dados
+- Filtros e busca de agendamentos
+- Notificações e alertas personalizados
+- Adaptação para dispositivos móveis
 
 ---
 
-Sinta-se à vontade para editar este README e o projeto conforme necessário!
+Sinta-se à vontade para modificar este README e o projeto conforme suas necessidades futuras!
